@@ -60,11 +60,18 @@
       <line start="_Middle+20x-20y" end="_End-20y" />
 
       <!-- Labels -->
-      <path start="_Middle-20x-6y" data="l 6,6 l -6,6" thickness="1" />
       <text value="D" x="_Middle-17" y="_Middle-20" align="CentreLeft" size="large" />
       <text value="Q" x="_Middle+17" y="_Middle-20" align="CentreRight" size="large" />
     </group>
 
+    <group conditions="$Clock==Rising">
+      <line start="_Start" end="_Middle-20x" />
+    </group>
+    <group conditions="$Clock==Falling">
+      <line start="_Start" end="_Middle-28x" />
+      <ellipse centre="_Middle-24x" rx="3" ry="3" thickness="1" />
+    </group>
+    
     <!-- Inverted output -->
     <group conditions="$Inverted">
       <line start="_Middle+20x+20y" end="_End+20y" />
