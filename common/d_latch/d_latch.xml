@@ -60,6 +60,7 @@
       <line start="_Middle+20x-20y" end="_End-20y" />
 
       <!-- Labels -->
+      <text value="E" x="_Middle-17" y="_Middle+20" align="CentreLeft" size="large" />
       <text value="D" x="_Middle-17" y="_Middle-20" align="CentreLeft" size="large" />
       <text value="Q" x="_Middle+17" y="_Middle-20" align="CentreRight" size="large" />
     </group>
@@ -71,7 +72,7 @@
       <line start="_Start" end="_Middle-28x" />
       <ellipse centre="_Middle-24x" rx="3" ry="3" thickness="1" />
     </group>
-    
+
     <!-- Inverted output -->
     <group conditions="$Inverted">
       <line start="_Middle+20x+20y" end="_End+20y" />
